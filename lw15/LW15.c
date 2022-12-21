@@ -47,7 +47,7 @@ int calc_s(int n, int matr[n][n]) {
     return s;
 }
 
-int edit_matr(int n, int matr[n][n], int max, int min) {
+int edit_matr(int n, int matr[n][n]) {
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             matr[i][j] = ind_matr_max(matr[i][j], max_matr(n, matr), calc_s(n, matr));
